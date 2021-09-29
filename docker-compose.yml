@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  webgoat:
+    image: webgoat/webgoat-8.0
+    container_name: webgoat
+    ports:
+      - "8080:8080"
+    tty: true
+  
+  zap:
+    image: owasp/${ZAP_VERSION}
+    container_name: zap
+    command: bash -c "zap.sh -cmd -addonuninstall hud && zap-webswing.sh"
+    volumes: 
+      - ./zap:/zap/wrk/
+    ports:
+      - "8081:8080"
+      - "8090:8090"
+    depends_on:
+      - webgoat
+    tty: true
