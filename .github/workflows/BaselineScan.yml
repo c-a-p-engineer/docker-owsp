@@ -20,9 +20,8 @@ jobs:
       # Docker Set Up
       - name: Docker Set Up
         run: |
-          cat <<EOL >> .env
-ZAP_VERSION=zap2docker-stable
-EOL
           docker-compose up -d --build
           docker exec -it zap zap.sh -cmd -addonuninstall hud
           docker exec -it zap zap-baseline.py -t http://webgoat:8080/WebGoat/login -r report.html
+        env:
+          ZAP_VERSION: zap2docker-stable
