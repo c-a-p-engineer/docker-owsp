@@ -3,7 +3,7 @@ name: BaseLine Scan
 on:
   push:
     branches:
-      - test/actions
+      - master
 
 jobs:
   deploy:
