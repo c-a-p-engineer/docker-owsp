@@ -21,11 +21,11 @@ jobs:
       - name: Docker Set Up
         run: |
           docker-compose up -d --build
-          docker exec zap zap.sh -cmd -addonuninstall hud
+          docker-compose exec -T　zap sh -c "zap.sh -cmd -addonuninstall hud"
         env:
           ZAP_VERSION: zap2docker-stable
 
       # OWSP BaseLineScan
       - name: OWSP BaseLineScan
         run: |
-          docker exec zap zap-baseline.py -t http://webgoat:8080/WebGoat/login -r report.html
+          docker-compose exec -T　zap sh -c "zap-baseline.py -t http://webgoat:8080/WebGoat/login -r report.html"
