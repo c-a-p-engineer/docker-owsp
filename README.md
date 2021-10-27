@@ -59,12 +59,12 @@ docker exec -it zap zap-api-scan.py -t http://webgoat:8080/WebGoat/login -r repo
 ```
 
 # Note
-[WebGoat/WebGoat: WebGoat is a deliberately insecure application](https://github.com/WebGoat/WebGoat)
-[Docker Hub webgoat/webgoat-8.0](https://hub.docker.com/r/webgoat/webgoat-8.0/)
-[ZAP Docker Documentation](https://www.zaproxy.org/docs/docker/)
-[Docker版OWASP ZAPを動かしてみる - Qiita](https://qiita.com/koujimatsuda11/items/83558cd62c20141ebdda)
-[DockerでOWASP ZAPを使う - みーのぺーじ](https://pc.atsuhiro-me.net/entry/2019/08/19/011324)
-[Docker版OWASP ZAPを使用してWebアプリの簡易的な脆弱性診断をしてみた](https://dev.classmethod.jp/articles/easy-vulnerability-diagnosis-of-web-app-with-owasp-zap-on-docker/)
+* [WebGoat/WebGoat: WebGoat is a deliberately insecure application](https://github.com/WebGoat/WebGoat)
+* [Docker Hub webgoat/webgoat-8.0](https://hub.docker.com/r/webgoat/webgoat-8.0/)
+* [ZAP Docker Documentation](https://www.zaproxy.org/docs/docker/)
+* [Docker版OWASP ZAPを動かしてみる - Qiita](https://qiita.com/koujimatsuda11/items/83558cd62c20141ebdda)
+* [DockerでOWASP ZAPを使う - みーのぺーじ](https://pc.atsuhiro-me.net/entry/2019/08/19/011324)
+* [Docker版OWASP ZAPを使用してWebアプリの簡易的な脆弱性診断をしてみた](https://dev.classmethod.jp/articles/easy-vulnerability-diagnosis-of-web-app-with-owasp-zap-on-docker/)
 
 # Author
 * [こぴぺたん](https://twitter.com/c_a_p_engineer)
